@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 
-:root{
+:root {
   --text-color: white;
   --br-url: url(./assets/bg-mobile.jpg);
   --stroke-color: rgba(255, 255, 255, 0.5);
@@ -14,10 +14,10 @@
   --switch-bg-url: url(./assets/moon-stars.svg);
 }
 
-.light{
+.light {
   --text-color: black;
   --br-url: url(./assets/bg-mobile-light.jpg);
-  --stroke-color: rgba(0, 0, 0, 1);
+  --stroke-color: rgba(0, 0, 0, 0.5);
   --surface-color: rgba(0, 0, 0, 0.05);
   --surface-color-hover: rgba(0, 0, 0, 0.02);
   --highlight-color: rgba(0, 0, 0, 0.1);
@@ -37,7 +37,7 @@ body * {
 #container {
   width: 100%;
   max-width: 588px;
-  margin-top: 56px auto 0px;
+  margin: 56px auto 0px;
   padding: 0 24px;
 }
 
@@ -58,7 +58,7 @@ body * {
 }
 
 /* switch */
-#switch{
+#switch {
   position: relative;
   width: 64px;
 
@@ -168,19 +168,20 @@ footer  {
 }
 
 /* media queries */
-@media (min-width: 700px){
+@media (min-width: 700px) {
   :root {
-    --bg-url: url(./assets/bg-desktop.jpb);
+    --bg-url: url(./assets/bg-desktop.jpg);
   }
 
   .light{
-    --br-url: url(./assets/bg-desktop-light.jpb);
+    --br-url: url(./assets/bg-desktop-light.jpg);
   }
 }
+
 /* animation */
 @keyframes slide-in {
   from {
-left: 0;
+    left: 0;
   }
   to {
     left: 50%;
