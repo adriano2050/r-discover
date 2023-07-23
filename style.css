@@ -81,11 +81,13 @@ body * {
   animation: slide-back 0.2s;
  }
 
- .light #switch button{
-  right: 0;
-  left: initial;
-
+ .light #switch button {
+  animation: slide-in 0.2s forwards;
  }
+
+#switch button:hover {
+  outline: 8px solid var(--highlight-color);
+}
 
  #switch span{
   display: block;
@@ -153,7 +155,6 @@ ul li a:hover {
 
   transition: background 0.2s;
   border-radius: 50%;
-
 }
 
 #social-links a:hover{
@@ -174,5 +175,23 @@ footer  {
 
   .light{
     --br-url: url(./assets/bg-desktop-light.jpb);
+  }
+}
+/* animation */
+@keyframes slide-in {
+  from {
+left: 0;
+  }
+  to {
+    left: 50%;
+  }
+}
+
+@keyframes slide-back {
+  from {
+    left: 50%;
+  }
+  to {
+    left: 0;
   }
 }
