@@ -34,7 +34,8 @@ body * {
 }
 
 #container {
-  width: 360px;
+  width: 100%;
+  max-width: 588px;
   margin-top: 56px auto 0px;
   padding: 0 24px;
 }
@@ -75,6 +76,8 @@ body * {
   left: 0;
   z-index: 1;
   transform: translateY(-50%);
+
+  animation: slide-back 0.2s;
  }
 
  .light #switch button{
